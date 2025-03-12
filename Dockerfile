@@ -12,4 +12,4 @@ RUN npm run build
 
 CMD ["npm", "run", "start:prod"]
 
-EXPOSE 3000 про
+EXPOSE 3000
