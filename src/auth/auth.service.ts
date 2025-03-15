@@ -5,6 +5,7 @@ import { UsersDto } from '../users/users.dto';
 import * as bcrypt from 'bcrypt';
 import {Users} from "../users/users.entity";
 import {LoginDto} from "./dto/login.dto";
+import {ApiOperation} from "@nestjs/swagger";
 
 @Injectable()
 export class AuthService {
