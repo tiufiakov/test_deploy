@@ -1,6 +1,6 @@
-export class UsersDto {
+export class RegisterDto {
     name: string;
-    age:number;
+    age: number;
     login: string;
     password: string;
 }

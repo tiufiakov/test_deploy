@@ -16,12 +16,8 @@ export class UsersController {
     @Post()
     async createUser(@Body() usersDto: UsersDto){
         console.log(usersDto);
-        const newUser: Users = {
-            id: 1,
-            name: usersDto.name,
-            age: usersDto.age,
-        }
-        await this.usersService.createUser(newUser);
+
+        await this.usersService.createUser(usersDto);
     }
 
     @Get('allUsers')
